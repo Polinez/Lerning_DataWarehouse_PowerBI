@@ -1,4 +1,5 @@
-# E-commerce Lerning Project: Full Data Lifecycle (Data → BI → ML)
+# E-commerce Lerning Project: Full Data Lifecycle
+# (Data → BI → ML)
 
 ## Learning Objectives
 
