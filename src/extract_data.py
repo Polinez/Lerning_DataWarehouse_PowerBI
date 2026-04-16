@@ -7,16 +7,14 @@ import kagglehub
 load_dotenv()
 
 def download_data_from_kaggle():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(current_dir, '..', 'config.json')
+
     # Set up Kaggle dataset download path from config.json
-    with open('../config.json', 'r') as plik:
+    with open(config_path, 'r') as plik:
         config = json.load(plik)
 
     os.environ['KAGGLEHUB_CACHE'] = config['DATA_DIR']
-
-    # Check if dataset already exists before downloading
-    if os.path.exists(config['DATA_DIR']):
-        print(f"Dataset already exists at \"{config['DATA_DIR']}\"  Skipping download.")
-        return config['DATA_DIR']
 
     # Download the dataset using kagglehub
     path = kagglehub.dataset_download("olistbr/brazilian-ecommerce")
