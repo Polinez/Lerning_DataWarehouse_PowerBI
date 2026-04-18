@@ -1,64 +1,40 @@
-# E-commerce Lerning Project: Full Data Lifecycle
-# (Data → BI → ML)
+# E-commerce Learning Project: Full Data Lifecycle
+# (Raw Data → ETL in Databricks → Power BI → ML)
 
 ## Learning Objectives
 
 The main goal of this project is to replicate the **complete data lifecycle** in a modern e-commerce enterprise.  
-The project does not focus on a single domain but integrates:
-
-- **Data Engineering**
-- **Data Science**
-- **Business Intelligence**
 
 Through this project, I am developing competencies in the following areas:
 
 ---
 
-### 1. Data Warehousing Architecture
+### 1. Data Engineering with Databricks & Medallion Architecture
 
-- **Data Migration (ETL)** – moving raw CSV files to a **PostgreSQL** relational database using Python (`SQLAlchemy` / `Pandas`).
-- **Data Modeling** – designing a professional **Star Schema**, the foundation of efficient data warehouses.
-- **Data Layering** – implementing the **medallion architecture**:
+- **Goal** – learn how to use **Databricks** to transform raw CSV data.
+- **Medallion Architecture** – implement:
   - `Bronze` – raw data
-  - `Silver` – cleaned data
-  - `Gold` – analytical views
+  - `Silver` – cleaned data (after transformations)
+  - `Gold` – structured analytical views
+
+🚧 Below work in progress
+- **Two output structures from the Gold layer**:
+  - **Star schema** (fact & dimension tables) – for efficient analysis in **Power BI**
+  - **One big table** (denormalized) – ready for **machine learning models**
+
+### 2. Power BI Dashboards
+
+- **Learn to build dashboards** in Power BI from scratch.
+- Connect to the star schema (or Gold tables) created in Databricks.
+- Create interactive visualizations to explore business metrics.
+
+### 3. Machine Learning Modeling (Bonus / Practice)
+
+- I already know how to build ML models (junior level). I read a lot about it and learn every day :)  
+- I also wanted to include model training in this project as a bonus.
 
 ---
 
-### 2. Exploratory Analytics & BI (Exploratory Power BI)
+## Disclaimer
 
-- **EDA Visualization** – building the first **Power BI** dashboard to understand:
-  - historical trends
-  - logistics performance
-  - geographical sales distribution in Brazil
-- **Process Analysis** – identifying delivery process **bottlenecks** that affect customer satisfaction.
-
----
-
-### 3. Advanced ML Modeling (Predictive Analytics)
-
-- **Feature Engineering** – transforming temporal and logistics data into numerical features understandable by algorithms.
-- **Classification (XGBoost)** – training a machine learning model to predict the **probability of customer dissatisfaction** (Churn / Satisfaction Prediction) based on order parameters.
-
----
-
-### 4. Predictive Analytics in BI (Actionable Dashboard)
-
-- **ML + BI Integration** – returning to Power BI to build a second, advanced dashboard.
-- **Decision Support** – creating a report that not only shows **what happened** (history) but also indicates **what might happen** (prediction) and suggests actions.
-
----
-
-## Future Directions
-
-The project will evolve toward a **cloud-native, scalable data platform**:
-
-- **Migration to Databricks** – moving the entire ETL process and `Bronze` / `Silver` / `Gold` layers to **Databricks** (leveraging Apache Spark for large-scale data processing).
-- **Training Models in Databricks** – the environment will enable distributed ML libraries (e.g., `Spark MLlib`) and seamless integration with **Delta Lake**.
-- **MLflow for Model Lifecycle Management** – experiment tracking, model registry, versioning, and production deployment – all within a single platform.
-
-This will bring scalability, reproducibility, and professional MLOps to the project.
-
----
-
-> The project currently combines **ETL**, **data modeling**, **visualization**, and **machine learning** – from raw CSV files to an interactive predictive dashboard. In the next stage, the entire pipeline will be migrated to **Databricks + MLflow**.
+The project isn't finished yet, but I'm still working on it and learning as I go.
