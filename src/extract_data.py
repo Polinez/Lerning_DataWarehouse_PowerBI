@@ -11,8 +11,8 @@ def download_data_from_kaggle():
     config_path = os.path.join(current_dir, '..', 'config.json')
 
     # Set up Kaggle dataset download path from config.json
-    with open(config_path, 'r') as plik:
-        config = json.load(plik)
+    with open(config_path, 'r') as file:
+        config = json.load(file)
 
     os.environ['KAGGLEHUB_CACHE'] = config['DATA_DIR']
 
