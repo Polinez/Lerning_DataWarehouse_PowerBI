@@ -17,10 +17,11 @@ Through this project, I am developing competencies in the following areas:
   - `Silver` – cleaned data (after transformations)
   - `Gold` – structured analytical views
 
-🚧 Below work in progress
 - **Two output structures from the Gold layer**:
   - **Star schema** (fact & dimension tables) – for efficient analysis in **Power BI**
   - **One big table** (denormalized) – ready for **machine learning models**
+ 
+🚧 Below work in progress
 
 ### 2. Power BI Dashboards
 
