@@ -4,6 +4,7 @@
 ## Learning Objectives
 
 The main goal of this project is to replicate the **complete data lifecycle** in a modern e-commerce enterprise.  
+Project is based on this dataset: [Brazilian E-Commerce Public Dataset by Olist]([PowerBI/01_SalesDashboard.png](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce))
 
 Through this project, I am developing competencies in the following areas:
 
