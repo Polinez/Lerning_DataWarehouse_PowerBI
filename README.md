@@ -58,5 +58,14 @@ Through this project, I am developing competencies in the following areas:
 - I used the firs time MLflow in Databricks. I know that MLflow is a powerful tool, but I also know that I need to practice it more.
 
 ![MLflow results](notebooks\03_ML\MLflow.png)
+
+
+### 4. All in one Pipeline
+
+- Everything is connected in one pipeline in Databricks from raw data to ETL. 
+- Naw it can be easily updated by a trigger like a schedule or new data arrival.
+
+![MLflow results](notebooks\02_ETL\DatabricksPipeline.png)
+
 ---
 
