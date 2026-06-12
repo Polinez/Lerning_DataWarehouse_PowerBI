@@ -65,7 +65,7 @@ Through this project, I am developing competencies in the following areas:
 - Everything is connected in one pipeline in Databricks from raw data to ETL. 
 - Naw it can be easily updated by a trigger like a schedule or new data arrival.
 
-![MLflow results](notebooks\02_ETL\DatabricksPipeline.png)
+![MLflow results](notebooks/02_ETL/DatabricksPipeline.png)
 
 ---
 
